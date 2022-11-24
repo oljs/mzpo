@@ -775,8 +775,12 @@ body .second-menu ._active a {
   text-align: center;
   font-size: 18px;
   font-weight: 400;
-  background: var(--color-dark) url(../img/1.jpg) center no-repeat;
+  background: var(--color-dark) url('../img/1.jpg') center no-repeat;
   background-size: cover;
+}
+
+.slider-big .swiper-slide:nth-of-type(odd) {
+  background-image: url('../img/2.jpg');
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -1546,7 +1550,7 @@ transform: scale(1.1);
   padding: 60px 45px 65px;
 }
 
-.grid_reverse .promo__text:last-of-type {
+.grid_reverse .promo__item:last-of-type .promo__text {
   justify-content: end;
 }
 
@@ -1562,10 +1566,6 @@ transform: scale(1.1);
 
 .promo__text-wrap {
   max-width: 640px;
-}
-
-.grid_reverse .promo__text-wrap {
-  
 }
 
 .promo__text p {
