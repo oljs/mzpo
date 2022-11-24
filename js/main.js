@@ -63,6 +63,11 @@ const init = () => {
     link.addEventListener('click', (e) => {
       let hashval = link.getAttribute('href');
       let target = document.querySelector(hashval);
+      window.scrollBy({ 
+        behavior: "smooth", 
+        top: 0, 
+        left: 0 
+      }); // for safari
       target.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
