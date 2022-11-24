@@ -65,7 +65,7 @@ const init = () => {
       let target = document.querySelector(hashval);
       window.scrollBy({ 
         behavior: "smooth", 
-        top: 0, 
+        top: 200, 
         left: 0 
       }); // for safari
       target.scrollIntoView({
